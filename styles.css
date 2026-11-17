@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --ink: #20232d;
+  --muted: #686d7b;
+  --paper: #fbfaf7;
+  --card: #ffffff;
+  --line: #e9e7e1;
+  --purple: #7057e8;
+  --lime: #d6f36a;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+.site-header { height: 78px; padding: 0 7%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -.7px; }
+.logo-mark { display: inline-grid; place-items: center; width: 27px; height: 27px; margin-right: 7px; color: #fff; background: var(--purple); border-radius: 8px; font-size: 13px; }
+nav { display: flex; gap: 34px; color: var(--muted); font-size: 14px; font-weight: 600; }
+nav a:hover, footer a:hover, .text-link:hover { color: var(--purple); }
+.theme-toggle { width: 38px; height: 38px; border: 1px solid var(--line); border-radius: 50%; background: var(--card); color: var(--ink); cursor: pointer; font-size: 18px; }
+.hero { min-height: 570px; padding: 75px 7%; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 7%; overflow: hidden; }
+.eyebrow, .genre { color: var(--purple); font-size: 11px; font-weight: 700; letter-spacing: 1.6px; }
+h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; line-height: 1.12; }
+h1 { margin: 18px 0; font-size: clamp(48px, 6vw, 76px); letter-spacing: -4px; }
+h1 span { color: var(--purple); }
+.hero-text { max-width: 460px; color: var(--muted); font-size: 16px; margin-bottom: 28px; }
+.primary-button { display: inline-flex; align-items: center; gap: 20px; padding: 13px 19px; background: var(--purple); color: white; border: 0; border-radius: 8px; font: 700 13px 'DM Sans', sans-serif; cursor: pointer; transition: transform .2s, background .2s; }
+.primary-button:hover { transform: translateY(-2px); background: #5c43d1; }
+.hero-art { position: relative; height: 350px; border-radius: 22px; overflow: hidden; background: linear-gradient(155deg, #b9e9e5 0%, #d8e8ff 56%, #f5d7e6 100%); box-shadow: 0 25px 55px #47416b1c; }
+.sun { position: absolute; width: 86px; height: 86px; border-radius: 50%; background: #ffe58b; top: 47px; right: 76px; box-shadow: 0 0 0 16px #ffe58b35; }
+.cloud { position: absolute; height: 17px; width: 72px; border-radius: 20px; background: #fff9; }
+.cloud:before, .cloud:after { content: ''; position: absolute; bottom: 5px; width: 30px; height: 30px; border-radius: 50%; background: inherit; }
+.cloud:before { left: 12px; }.cloud:after { right: 10px; width: 23px; height: 23px; }
+.cloud-one { top: 95px; left: 50px; }.cloud-two { top: 145px; right: 35px; transform: scale(.7); }
+.mountain { position: absolute; bottom: 65px; width: 0; height: 0; border-left: 150px solid transparent; border-right: 150px solid transparent; border-bottom: 210px solid #91b7bd; }
+.mountain-back { left: 20px; }.mountain-front { right: -45px; border-bottom-color: #719b9d; border-left-width: 190px; border-right-width: 190px; }
+.platform { position: absolute; bottom: 0; height: 75px; width: 100%; background: repeating-linear-gradient(90deg, #5e8b69 0 35px, #6f9e78 35px 70px); border-top: 12px solid #a5cb83; }
+.pixel-character { position: absolute; z-index: 2; bottom: 72px; left: 46%; width: 42px; height: 48px; display: grid; place-items: center; color: #fff; background: #ed806f; border: 5px solid #3c4654; border-radius: 10px 10px 4px 4px; box-shadow: 0 8px 0 #3c4654; font-size: 20px; }
+.art-label { position: absolute; top: 20px; left: 22px; color: #496a75; font-size: 10px; font-weight: 700; letter-spacing: 1.3px; }
+.section-wrap { padding-left: 7%; padding-right: 7%; }
+.picks { padding-top: 55px; padding-bottom: 90px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 28px; }
+h2 { font-size: clamp(30px, 4vw, 43px); letter-spacing: -1.8px; margin: 8px 0; }
+.section-heading > p { max-width: 270px; color: var(--muted); font-size: 14px; }
+.game-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.game-card { overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: 14px; transition: transform .2s, box-shadow .2s; }
+.game-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px #27223b12; }
+.game-art { height: 175px; position: relative; overflow: hidden; display: grid; place-items: center; }
+.game-art > span { position: absolute; top: 14px; left: 16px; font-size: 11px; font-weight: 700; opacity: .65; }
+.art-platform { background: #f8d7bd; }.tiny-hero { font-size: 65px; color: #fff; text-shadow: 4px 4px #e68a75; transform: rotate(-12deg); }.ground { position: absolute; height: 22px; bottom: 0; width: 100%; background: #8cbd83; border-top: 5px solid #c7e79b; }
+.art-puzzle { background: #d9d4ff; }.puzzle-shape { font-size: 90px; color: #7562d9; transform: rotate(12deg); }.puzzle-dot { position: absolute; width: 16px; height: 16px; border-radius: 50%; background: #f4a66e; right: 27%; top: 38px; }
+.art-adventure { background: #24294f; color: #fff; }.star-field { position: absolute; top: 25px; font-size: 25px; color: #e9d6ff; }.planet { width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(140deg, #f3a7bd, #8d78d9); box-shadow: 15px 12px 0 #f7c66d55; }
+.card-content { padding: 20px 21px 22px; }.genre { margin: 0 0 8px; font-size: 10px; }.card-content h3 { font-size: 20px; margin: 0 0 9px; }.card-content > p:not(.genre) { min-height: 67px; color: var(--muted); font-size: 13px; }.text-link { color: var(--purple); font-size: 12px; font-weight: 700; }
+.about { padding-top: 65px; padding-bottom: 65px; display: grid; grid-template-columns: 70px 1fr 1fr; align-items: center; gap: 30px; background: #f0eefb; }
+.about-icon { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 16px; background: var(--lime); font-size: 31px; }.about > p { color: #666779; font-size: 14px; max-width: 430px; }
+.contact { padding-top: 85px; padding-bottom: 85px; display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: center; }.contact > div > p:last-child { color: var(--muted); font-size: 14px; }.contact form label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 9px; }.form-row { display: flex; gap: 9px; }.form-row input { min-width: 0; flex: 1; padding: 13px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); font: inherit; }.form-message { min-height: 20px; color: var(--purple); font-size: 12px; }
+footer { min-height: 85px; padding: 20px 7%; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }footer .logo { color: var(--ink); font-size: 14px; }
+body.dark { --ink: #f1f0fa; --muted: #b5b2c6; --paper: #171827; --card: #222438; --line: #34364b; }.dark .about { background: #25253b; }.dark .about > p { color: #c0bdd1; }
+@media (max-width: 760px) {
+  .site-header { padding: 0 5%; height: 68px; } nav { gap: 13px; font-size: 11px; } .theme-toggle { width: 34px; height: 34px; }
+  .hero { padding: 58px 6%; grid-template-columns: 1fr; gap: 38px; }.hero-art { height: 280px; }
+  .section-wrap { padding-left: 6%; padding-right: 6%; }.section-heading { display: block; }.section-heading > p { margin-top: 10px; }
+  .game-grid { grid-template-columns: 1fr; }.game-art { height: 190px; }.card-content > p:not(.genre) { min-height: 0; }
+  .about { grid-template-columns: 55px 1fr; gap: 18px; }.about > p { grid-column: 2; margin-top: 0; }
+  .contact { grid-template-columns: 1fr; gap: 25px; padding-top: 65px; padding-bottom: 65px; }
+  .form-row { flex-direction: column; }.form-row .primary-button { justify-content: center; }
+  footer { flex-wrap: wrap; gap: 12px; } footer p { order: 3; width: 100%; margin: 0; }
+}
+@media (max-width: 420px) { nav { gap: 9px; } nav a { font-size: 10px; } .logo { font-size: 12px; } h1 { letter-spacing: -2.5px; } }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pixel Play — a colorful guide to great indie games.">
+  <title>Pixel Play | Indie Game Picks</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="logo" href="#home" aria-label="Pixel Play home"><span class="logo-mark">▶</span> PIXEL PLAY</a>
+    <nav aria-label="Main navigation">
+      <a href="#picks">Game Picks</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">☾</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PRESS START · DISCOVER SOMETHING NEW</p>
+        <h1>Small games.<br><span>Big adventures.</span></h1>
+        <p class="hero-text">A friendly corner of the internet for discovering creative indie games, unforgettable worlds, and your next favorite adventure.</p>
+        <a class="primary-button" href="#picks">Explore the picks <span>↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Decorative pixel-style game landscape">
+        <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+        <div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+        <div class="platform"></div><div class="pixel-character">●</div>
+        <span class="art-label">LEVEL 01 — THE START</span>
+      </div>
+    </section>
+
+    <section class="picks section-wrap" id="picks">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE PLAYLIST</p><h2>Three worlds to explore</h2></div>
+        <p>Hand-picked adventures for your next gaming break.</p>
+      </div>
+      <div class="game-grid">
+        <article class="game-card">
+          <div class="game-art art-platform"><span>01</span><div class="tiny-hero">✦</div><div class="ground"></div></div>
+          <div class="card-content"><p class="genre">PLATFORMER</p><h3>Jump into the Unknown</h3><p>Run, leap, and discover secret paths in a bright world full of surprises.</p><a href="#contact" class="text-link">Add to my list ↗</a></div>
+        </article>
+        <article class="game-card">
+          <div class="game-art art-puzzle"><span>02</span><div class="puzzle-shape">◈</div><div class="puzzle-dot"></div></div>
+          <div class="card-content"><p class="genre">PUZZLE</p><h3>Quietly Clever</h3><p>Slow down, notice the details, and solve clever little challenges.</p><a href="#contact" class="text-link">Add to my list ↗</a></div>
+        </article>
+        <article class="game-card">
+          <div class="game-art art-adventure"><span>03</span><div class="star-field">✦　·　✧</div><div class="planet"></div></div>
+          <div class="card-content"><p class="genre">ADVENTURE</p><h3>Beyond the Stars</h3><p>Set off on a cozy journey through mysterious places and colorful skies.</p><a href="#contact" class="text-link">Add to my list ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-icon">✳</div>
+      <div><p class="eyebrow">WHY PIXEL PLAY?</p><h2>Good games leave<br>great memories.</h2></div>
+      <p>Pixel Play celebrates imaginative games made with care. Whether you have five minutes or a whole weekend, there is always another world waiting to be explored.</p>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div><p class="eyebrow">YOUR TURN</p><h2>What should we play next?</h2><p>Send us a game genre you would like to see featured.</p></div>
+      <form id="suggestionForm">
+        <label for="genreInput">Your game idea</label>
+        <div class="form-row"><input id="genreInput" name="genre" type="text" placeholder="e.g. cozy farming games" required><button class="primary-button" type="submit">Send idea ↗</button></div>
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home"><span class="logo-mark">▶</span> PIXEL PLAY</a>
+    <p>© 2026 Pixel Play. Made for curious players.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
